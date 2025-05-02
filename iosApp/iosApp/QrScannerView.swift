@@ -3,7 +3,7 @@ import VisionKit
 
 @MainActor
 struct QrScannerView: UIViewControllerRepresentable {
-    @Binding var qr: String
+    let onBarcodeDetected: (String) -> Void
    
     var scannerViewController: DataScannerViewController = DataScannerViewController(
         recognizedDataTypes: [.barcode()],
@@ -70,7 +70,7 @@ struct QrScannerView: UIViewControllerRepresentable {
         func processItem(item: RecognizedItem) {
             switch item {
             case .barcode(let code):
-                parent.qr = code.payloadStringValue ?? ""
+                parent.onBarcodeDetected(code.payloadStringValue ?? "")
             case .text(_):
                 break
             @unknown default:

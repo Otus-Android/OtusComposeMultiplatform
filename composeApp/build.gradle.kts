@@ -27,7 +27,6 @@ kotlin {
     }
 
     sourceSets {
-
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
@@ -36,7 +35,6 @@ kotlin {
             implementation(libs.androidx.camera.lifecycle)
             implementation(libs.androidx.camera.view)
             implementation(libs.androidx.navigation.compose)
-            implementation(libs.kotlinx.serialization.json)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -47,6 +45,9 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
+            implementation(libs.kotlinx.serialization.json)
+            implementation(libs.jetbrains.navigation.compose)
+            implementation(libs.jetbrains.material.icons.core)
         }
     }
 }
