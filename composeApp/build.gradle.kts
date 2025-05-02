@@ -32,13 +32,11 @@ kotlin {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
             implementation(libs.play.services.mlkit.barcode.scanning)
-            // CameraX
-            implementation("androidx.camera:camera-camera2:1.4.2")
-            implementation("androidx.camera:camera-lifecycle:1.4.2")
-            implementation("androidx.camera:camera-view:1.4.2")
-
-            implementation("androidx.navigation:navigation-compose:2.8.9")
-            implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+            implementation(libs.androidx.camera.camera2)
+            implementation(libs.androidx.camera.lifecycle)
+            implementation(libs.androidx.camera.view)
+            implementation(libs.androidx.navigation.compose)
+            implementation(libs.kotlinx.serialization.json)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
