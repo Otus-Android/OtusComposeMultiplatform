@@ -14,8 +14,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         WindowCompat.getInsetsController(window, window.decorView).apply {
-            isAppearanceLightStatusBars = false
-            isAppearanceLightNavigationBars = false
+            isAppearanceLightStatusBars = true
+            isAppearanceLightNavigationBars = true
         }
 
         setContent {
