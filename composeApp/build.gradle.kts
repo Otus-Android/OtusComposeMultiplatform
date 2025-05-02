@@ -43,7 +43,7 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
-            implementation(libs.androidx.lifecycle.viewmodel)
+            implementation(libs.jetbrains.material.icons.core)
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.jetbrains.navigation.compose)
