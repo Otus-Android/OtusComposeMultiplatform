@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ComposeMultiplatform</string>
+    <string name="qr_code_title">QR-коды</string>
+    <string name="qr_code_added">QR-код добавлен</string>
+</resources>
